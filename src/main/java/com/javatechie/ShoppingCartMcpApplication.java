@@ -1,6 +1,7 @@
 package com.javatechie;
 
 import com.javatechie.tools.ShoppingCartMcpService;
+import com.javatechie.tools.UserMcpService;
 import org.springframework.ai.support.ToolCallbacks;
 import org.springframework.ai.tool.ToolCallback;
 import org.springframework.boot.SpringApplication;
@@ -17,8 +18,13 @@ public class ShoppingCartMcpApplication {
 	}
 
 	@Bean
-	public List<ToolCallback> shoppingCartToolCallback(ShoppingCartMcpService cartMcpService){
-		return List.of(ToolCallbacks.from(cartMcpService));
+	public List<ToolCallback> shoppingCartToolCallback(
+			ShoppingCartMcpService cartMcpService,
+			UserMcpService userMcpService) {
+		return java.util.stream.Stream.concat(
+				java.util.Arrays.stream(ToolCallbacks.from(cartMcpService)),
+				java.util.Arrays.stream(ToolCallbacks.from(userMcpService)))
+				.toList();
 	}
 
 }

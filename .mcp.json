@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "shopping-cart-server": {
+      "type": "stdio",
+      "command": "java",
+      "args": [
+        "-jar",
+        "${CLAUDE_PROJECT_DIR}/target/shopping-cart-server.jar"
+      ]
+    }
+  }
+}
