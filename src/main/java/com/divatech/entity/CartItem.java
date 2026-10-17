@@ -1,4 +1,4 @@
-package com.javatechie.entity;
+package com.divatech.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

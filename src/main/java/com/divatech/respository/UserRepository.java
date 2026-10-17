@@ -1,6 +1,6 @@
-package com.javatechie.respository;
+package com.divatech.respository;
 
-import com.javatechie.entity.DemoUser;
+import com.divatech.entity.DemoUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.javatechie.tools;
+package com.divatech.tools;
 
-import com.javatechie.entity.DemoUser;
-import com.javatechie.respository.UserRepository;
+import com.divatech.entity.DemoUser;
+import com.divatech.respository.UserRepository;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.ai.tool.annotation.ToolParam;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
-package com.javatechie.respository;
+package com.divatech.respository;
 
-import com.javatechie.entity.CartItem;
+import com.divatech.entity.CartItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 

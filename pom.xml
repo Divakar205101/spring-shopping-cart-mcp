@@ -8,7 +8,7 @@
 		<version>3.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.javatechie</groupId>
+	<groupId>com.divatech</groupId>
 	<artifactId>shopping-cart-mcp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>shopping-cart-mcp</name>

@@ -1,7 +1,7 @@
-package com.javatechie;
+package com.divatech;
 
-import com.javatechie.tools.ShoppingCartMcpService;
-import com.javatechie.tools.UserMcpService;
+import com.divatech.tools.ShoppingCartMcpService;
+import com.divatech.tools.UserMcpService;
 import org.springframework.ai.support.ToolCallbacks;
 import org.springframework.ai.tool.ToolCallback;
 import org.springframework.boot.SpringApplication;

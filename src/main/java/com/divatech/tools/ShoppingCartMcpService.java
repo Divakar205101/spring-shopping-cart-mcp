@@ -1,7 +1,7 @@
-package com.javatechie.tools;
+package com.divatech.tools;
 
-import com.javatechie.entity.CartItem;
-import com.javatechie.respository.CartItemRepository;
+import com.divatech.entity.CartItem;
+import com.divatech.respository.CartItemRepository;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.ai.tool.annotation.ToolParam;
 import org.springframework.stereotype.Service;
