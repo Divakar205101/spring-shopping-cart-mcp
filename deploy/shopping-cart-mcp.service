@@ -1,0 +1,17 @@
+[Unit]
+Description=Spring Shopping Cart REST API and MCP server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/opt/shopping-cart-mcp
+EnvironmentFile=/etc/shopping-cart-mcp.env
+ExecStart=/usr/bin/java -jar /opt/shopping-cart-mcp/shopping-cart-server.jar --spring.profiles.active=ec2
+Restart=on-failure
+RestartSec=5
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
